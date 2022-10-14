@@ -27,7 +27,7 @@ const Headz = (props: Props) => {
         }}
         viewport={{ once: true }}
         src={hound.src}
-        className="-mb-40 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+        className="-mb-40 md:mb-0 flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
