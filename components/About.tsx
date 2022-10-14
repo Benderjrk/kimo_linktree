@@ -31,10 +31,10 @@ const About = (props: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-        <h3 className=" uppercase tracking-[10px] text-gray-500 text-2xl">
+        <h3 className=" uppercase tracking-[10px] text-gray-500 text-md md:text-2xl my-3">
           About Kimosabe
         </h3>
-        <h3 className=" uppercase tracking-[10px] text-gray-500 text-2xl">
+        <h3 className=" uppercase tracking-[10px] text-gray-500 text-md md:text-2xl my-3">
           I&apos;m Kimosabe, a NFT-artist and graphic designer🎨
         </h3>
         <div className='pt-5'>

@@ -31,7 +31,7 @@ const Headz = (props: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-      <h3 className=" uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" uppercase tracking-[20px] text-gray-500 text-md md:text-2xl my-3">
         Machine Headz
       </h3>
         {/* <p className="text-sm text-justify">
