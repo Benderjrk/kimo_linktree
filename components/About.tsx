@@ -31,18 +31,18 @@ const About = (props: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-        <h3 className=" uppercase tracking-[10px] text-gray-500 text-md md:text-2xl my-3">
+        <h3 className=" uppercase tracking-[10px] text-gray-300 text-md md:text-2xl my-3">
           About Kimosabe
         </h3>
-        <h3 className=" uppercase tracking-[10px] text-gray-500 text-md md:text-2xl my-3">
+        <h3 className=" uppercase tracking-[10px] text-gray-300 text-md md:text-2xl my-3">
           I&apos;m Kimosabe, a NFT-artist and graphic designer🎨
         </h3>
         <div className='pt-5'>
             <Link href={'https://discord.gg/EmUQKuT79g'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
             </Link>
             <Link href={'https://twitter.com/Nft4R'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Twitter</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Twitter</button>
             </Link>
         </div>
       </div>

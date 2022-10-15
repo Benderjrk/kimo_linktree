@@ -19,20 +19,26 @@ function Hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
-        <div className='relative rounded-full h-32 w-32 mx-auto'>
-            <Image
+        <Image
                 src={legend.src}
                 alt="Legendary Machine Skull"
                 layout="fill"
-                className='rounded-full'
+                className='opacity-20'
+        />
+        <div className='relative rounded-full h-32 w-32 mx-auto'>
+            <Image
+                    src={legend.src}
+                    alt="Legendary Machine Skull"
+                    layout="fill"
+                    className='rounded-full'
             />
         </div>
         
         <div className='z-20'>
-            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Kimosabe Art</h2>
+            <h2 className='text-lg md:text-3xl uppercase text-gray-300 pb-2 tracking-[15px]'>Kimosabe Art</h2>
             <h1 className='text-2xl md:text-5xl lg:text-6xl font-semibold px-10'>
                 <span className='mr-3'>{text}</span>
-                <Cursor cursorColor='#47FF09' />
+                <Cursor cursorColor='#F55010' />
             </h1>
         </div>
     </div>

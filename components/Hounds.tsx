@@ -31,7 +31,7 @@ const Headz = (props: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-      <h3 className=" uppercase tracking-[20px] text-gray-500 text-md md:text-2xl my-3">
+      <h3 className=" uppercase tracking-[20px] text-gray-300 text-md md:text-2xl my-3">
         Hell Hounds
       </h3>
         {/* <p className="text-sm text-justify">
@@ -39,13 +39,13 @@ const Headz = (props: Props) => {
         </p> */}
         <div className='pt-5'>
             <Link href={'https://discord.gg/EmUQKuT79g'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
             </Link>
             <Link href={'https://hellhoundscnft.com/'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>hellhoundscnft.com</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>hellhoundscnft.com</button>
             </Link>
             <Link href={'https://twitter.com/HellHounds_cnft'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Twitter</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Twitter</button>
             </Link>
         </div>
       </div>

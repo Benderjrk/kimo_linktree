@@ -31,25 +31,28 @@ export default function Header({}: Props) {
                     network="discord"
                     fgColor="gray"
                     bgColor='#0A101E'
-                    className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
+                    className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
                 />
                 <SocialIcon 
                     url="https://twitter.com/Nft4R"
                     fgColor="gray"
                     bgColor='transparent' 
-                    className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
+                    className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
                 />
+                <Link href={'#hero'}>
+                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Home</button>
+                </Link>
                 <Link href={'#about'}>
-                    <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>About</button>
+                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>About</button>
                 </Link>
                 <Link href={'#headz'}>
-                    <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Machine Headz</button>
+                    <button className='heroButton hover:border-yellow-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Machine Headz</button>
                 </Link>
                 <Link href={'#hounds'}>
-                    <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Hell Hounds</button>
+                    <button className='heroButton hover:border-yellow-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Hell Hounds</button>
                 </Link>
                 <Link href={'#survival'}>
-                    <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Survival Arena</button>
+                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Survival Arena</button>
                 </Link>
             </div>
         </motion.div>

@@ -31,7 +31,7 @@ const Headz = (props: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-      <h3 className=" uppercase tracking-[20px] text-gray-500 text-md md:text-2xl my-3">
+      <h3 className=" uppercase tracking-[20px] text-gray-300 text-md md:text-2xl my-3">
         Machine Headz
       </h3>
         {/* <p className="text-sm text-justify">
@@ -39,10 +39,10 @@ const Headz = (props: Props) => {
         </p> */}
         <div className='pt-5'>
             <Link href={'https://discord.gg/ekTYkxn25R'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
             </Link>
             <Link href={'https://machineheadz.io/'}>
-                <button className='heroButton hover:border-indigo-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>MachineHeadz.io</button>
+                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>MachineHeadz.io</button>
             </Link>
         </div>
       </div>
