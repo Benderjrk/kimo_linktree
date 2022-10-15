@@ -18,13 +18,13 @@ function Hero({}: Props) {
     });
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
-        <BackgroundCircles />
         <Image
                 src={legend.src}
                 alt="Legendary Machine Skull"
                 layout="fill"
                 className='opacity-20'
         />
+        <BackgroundCircles />
         <div className='relative rounded-full h-32 w-32 mx-auto'>
             <Image
                     src={legend.src}
