@@ -5,6 +5,10 @@
         "name": "Kimosabe",
         "info": "I'M KIMOSABE, A NFT-ARTIST AND GRAPHIC DESIGNER🎨",
         "image": "kimo.png",
+        "words": [
+            "Links related to Kimosabe Art"
+        ],
+        "heroImage": "legendary.gif",
         "links": [
             {
                 "buttonTitle": "Discord",
@@ -86,6 +90,10 @@
                 {
                     "buttonTitle": "Jpg.Store",
                     "url": "https://www.jpg.store/collection/survivalarena"
+                },
+                {
+                    "buttonTitle": "SurvivalArena.io",
+                    "url": "https://survivalarena.io/"
                 }
             ]
         }

@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
       <Header about={projectJson.about} projects={projectJson.projects} />
       <section id='home' className='snap-start'>
-        <Hero />
+        <Hero about={projectJson.about} title={projectJson.title} />
       </section>
       <section id='about' className='snap-start'>
         <About about={projectJson.about} />

@@ -1,7 +1,6 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
-import Link from 'next/link';
 import Button from './Button';
 
 type Props = {
@@ -34,9 +33,8 @@ export default function Header({ about, projects }: Props) {
                     <SocialIcon
                         key={link.buttonTitle}
                         url={link.url}
-                        fgColor="gray"
-                        bgColor='transparent' 
-                        className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
+                        fgColor="white"
+                        className='mx-3' 
                     />
                 ))}
                 <Button href={`#home`} words={'Home'}/>
