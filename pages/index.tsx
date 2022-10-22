@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         backgroundColor: '#0A101E'
       }}
       animate={{
-        backgroundColor: ['#50006C', '#0A101E']
+        backgroundColor: ['#4E2309', '#0A101E']
       }}
       transition={{
         duration: 2.5,
@@ -32,8 +32,8 @@ const Home: NextPage = () => {
         <About about={projectJson.about} />
       </section>
       {projectJson.projects.map((data: any) => (
-          <section  id={data.projectName} key={data.projectName} className='snap-start'>
-            <ProjectLinks projectDate={data} />
+          <section  id={data.projectName} key={data.projectName} className='snap-center'>
+            <ProjectLinks projectData={data} />
           </section>
       ))}
 

@@ -5,10 +5,12 @@
         "name": "Kimosabe",
         "info": "I'M KIMOSABE, A NFT-ARTIST AND GRAPHIC DESIGNER🎨",
         "image": "kimo.png",
+        "imageAlt": "Kimosabe Character",
         "words": [
             "Links related to Kimosabe Art"
         ],
         "heroImage": "legendary.gif",
+        "heroAlt": "Legendary Machine Skull",
         "links": [
             {
                 "buttonTitle": "Discord",

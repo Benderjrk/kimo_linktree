@@ -17,10 +17,10 @@ function Hero({ about, title }: Props) {
         delaySpeed: 2000,
     });
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden select-none'>
         <Image
                 src={about.heroImage}
-                alt="Legendary Machine Skull"
+                alt={about.heroAlt}
                 layout="fill"
                 className='opacity-20'
         />
@@ -28,7 +28,7 @@ function Hero({ about, title }: Props) {
         <div className='relative rounded-full h-32 w-32 mx-auto'>
             <Image
                     src={about.heroImage}
-                    alt="Legendary Machine Skull"
+                    alt={about.heroAlt}
                     layout="fill"
                     className='rounded-full'
             />
