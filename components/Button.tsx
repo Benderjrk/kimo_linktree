@@ -9,7 +9,7 @@ type Props = {
 const Button = ({ href, words }: Props) => {
   return (
     <Link href={href}>
-        <a className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>{words}</a>
+        <a className='heroButton hover:shadow-inner hover:shadow-4xl hover:shadow-yellow-500'>{words}</a>
     </Link>
   )
 }

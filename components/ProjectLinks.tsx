@@ -38,7 +38,7 @@ const ProjectLinks = ({ projectDate }: Props) => {
         {/* <p className="text-sm text-justify">
           Machine Headz
         </p> */}
-        <div className='pt-5'>
+        <div className='flex flex-wrap justify-center'>
           {projectDate.links.map((data: any) => (
               <Button key={data.buttonTitle} href={data.url} words={data.buttonTitle}/>
             ))}

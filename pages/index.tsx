@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <About about={projectJson.about} />
       </section>
       {projectJson.projects.map((data: any) => (
-          <section  id={data.projectName} key={data.projectName} className='snap-center'>
+          <section  id={data.projectName} key={data.projectName} className='snap-start'>
             <ProjectLinks projectDate={data} />
           </section>
       ))}

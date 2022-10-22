@@ -29,7 +29,7 @@ export default function Header({ about, projects }: Props) {
             className='flex flex-row items-center'>
             {/* Social Icons */}
             
-            <div className='pt-5'>
+            <div className='hidden sm:flex sm:flex-wrap justify-center'>
                 {about.links.map((link: any) => (
                     <SocialIcon
                         key={link.buttonTitle}
