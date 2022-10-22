@@ -1,11 +1,14 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
-import Link from 'next/link';
+import Button from './Button';
 
-type Props = {}
+type Props = {
+    about: any,
+    projects: any
+}
 
-export default function Header({}: Props) {
+export default function Header({ about, projects }: Props) {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div 
@@ -25,35 +28,20 @@ export default function Header({}: Props) {
             className='flex flex-row items-center'>
             {/* Social Icons */}
             
-            <div className='pt-5'>
-                <SocialIcon 
-                    url='https://discord.gg/EmUQKuT79g'
-                    network="discord"
-                    fgColor="gray"
-                    bgColor='#0A101E'
-                    className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
-                />
-                <SocialIcon 
-                    url="https://twitter.com/Nft4R"
-                    fgColor="gray"
-                    bgColor='transparent' 
-                    className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
-                />
-                <Link href={'#hero'}>
-                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Home</button>
-                </Link>
-                <Link href={'#about'}>
-                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>About</button>
-                </Link>
-                <Link href={'#headz'}>
-                    <button className='heroButton hover:border-yellow-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Machine Headz</button>
-                </Link>
-                <Link href={'#hounds'}>
-                    <button className='heroButton hover:border-yellow-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Hell Hounds</button>
-                </Link>
-                <Link href={'#survival'}>
-                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Survival Arena</button>
-                </Link>
+            <div className='hidden sm:flex sm:flex-wrap justify-center'>
+                {about.links.map((link: any) => (
+                    <SocialIcon
+                        key={link.buttonTitle}
+                        url={link.url}
+                        fgColor="white"
+                        className='mx-3' 
+                    />
+                ))}
+                <Button href={`#home`} words={'Home'}/>
+                <Button href={`#about`} words={'About'}/>
+                {projects.map((project: any) => (
+                    <Button key={project.projectName} href={`#${project.projectName}`} words={project.projectName}/>
+                ))}
             </div>
         </motion.div>
 

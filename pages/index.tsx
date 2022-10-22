@@ -3,10 +3,8 @@ import Head from 'next/head'
 import About from '../components/About'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Survival from '../components/Survival'
-import Hounds from '../components/Hounds'
-import Headz from '../components/Headz'
-import styles from '../styles/Home.module.css'
+import ProjectLinks from '../components/ProjectLinks'
+import projectJson from '../public/project_info.json'
 
 import { motion } from "framer-motion";
 
@@ -24,31 +22,20 @@ const Home: NextPage = () => {
       }}
       className=" text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth">
       <Head>
-        <title>Kimosabe Art</title>
+        <title>{projectJson.title}</title>
       </Head>
-      <Header />
-      <section id='hero' className='snap-start'>
-        <Hero />
+      <Header about={projectJson.about} projects={projectJson.projects} />
+      <section id='home' className='snap-start'>
+        <Hero about={projectJson.about} title={projectJson.title} />
       </section>
       <section id='about' className='snap-start'>
-        <About />
+        <About about={projectJson.about} />
       </section>
-      {/* Machine Headz */}
-      <section id='headz' className='snap-center'>
-        <Headz />
-      </section>
-      
-      {/* Hell Hounds */}
-      <section id='hounds' className='snap-center'>
-        <Hounds />
-      </section>
-
-      {/* Survival Arena */}
-      <section id='survival' className='snap-center'>
-        <Survival />
-      </section>
-      
-      {/* Contact Me */}
+      {projectJson.projects.map((data: any) => (
+          <section  id={data.projectName} key={data.projectName} className='snap-start'>
+            <ProjectLinks projectDate={data} />
+          </section>
+      ))}
 
     </motion.div>
   )

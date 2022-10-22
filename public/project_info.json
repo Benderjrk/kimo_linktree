@@ -1,0 +1,102 @@
+{
+    "title": "Kimosabe Art",
+    "background": "legendary.gif",
+    "about": {
+        "name": "Kimosabe",
+        "info": "I'M KIMOSABE, A NFT-ARTIST AND GRAPHIC DESIGNER🎨",
+        "image": "kimo.png",
+        "words": [
+            "Links related to Kimosabe Art"
+        ],
+        "heroImage": "legendary.gif",
+        "links": [
+            {
+                "buttonTitle": "Discord",
+                "url": "https://discord.com/invite/ekTYkxn25R"
+            },
+            {
+                "buttonTitle": "Twitter",
+                "url": "https://twitter.com/Nft4R"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "projectName": "Machine Headz",
+            "image": "machine_headz.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/RWaRt7xuc9"
+                },
+                {
+                    "buttonTitle": "MachineHeadz.io",
+                    "url": "https://machineheadz.io/"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/machineheadz"
+                },
+                {
+                    "buttonTitle": "Jpg.Store (Clan Leader)",
+                    "url": "https://www.jpg.store/collection/MachineHeadzClanLeaders"
+                },
+                {
+                    "buttonTitle": "Jpg.Store (Chaos)",
+                    "url": "https://www.jpg.store/collection/MachineHeadzChaosEdition"
+                },
+                {
+                    "buttonTitle": "CNFT Jungle",
+                    "url": "https://www.cnftjungle.io/collections/8f63e08467bfbbc260a382a80f3297f9a569fca0293f296620d72d17"
+                }
+            ]
+        },
+        {
+            "projectName": "Skull Surfers",
+            "image": "skull_surfer.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/skullsurfers"
+                }
+            ]
+        },
+        {
+            "projectName": "Hell Hounds",
+            "image" : "hell_hound.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/hellhounds"
+                }
+            ]
+        },
+        {
+            "projectName": "Survival Arena",
+            "image" : "survival_arena.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/survivalarena"
+                },
+                {
+                    "buttonTitle": "SurvivalArena.io",
+                    "url": "https://survivalarena.io/"
+                }
+            ]
+        }
+    ]
+
+}

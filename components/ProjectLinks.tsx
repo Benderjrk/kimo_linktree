@@ -1,11 +1,12 @@
 import React from "react";
-import survival from "../public/survivalArena.gif";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Button from "./Button";
 
-type Props = {};
+type Props = {
+  projectDate: any
+};
 
-const Survival = (props: Props) => {
+const ProjectLinks = ({ projectDate }: Props) => {
   return (
     <motion.div 
         initial={{ opacity: 0 }}
@@ -26,28 +27,25 @@ const Survival = (props: Props) => {
           duration: 1.2,
         }}
         viewport={{ once: true }}
-        src={survival.src}
+        src={projectDate.image}
         className="-mb-40 md:mb-0 flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
       <h3 className=" uppercase tracking-[20px] text-gray-300 text-md md:text-2xl my-3">
-        Survival Arena
+        {projectDate.projectName}
       </h3>
         {/* <p className="text-sm text-justify">
           Machine Headz
         </p> */}
-        <div className='pt-5'>
-            <Link href={'https://survivalarena.io/'}>
-                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>survivalarena.io</button>
-            </Link>
-            <Link href={'https://info-182.gitbook.io/survival-arena/'}>
-                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Paper</button>
-            </Link>
+        <div className='flex flex-wrap justify-center'>
+          {projectDate.links.map((data: any) => (
+              <Button key={data.buttonTitle} href={data.url} words={data.buttonTitle}/>
+            ))}
         </div>
       </div>
     </motion.div>
   );
 };
 
-export default Survival;
+export default ProjectLinks;
