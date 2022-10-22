@@ -3,9 +3,11 @@ import wrapGif from "../public/wrap.gif";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+  projectDate: any
+};
 
-const ProjectLinks = (props: Props) => {
+const ProjectLinks = ({ projectDate }: Props) => {
   return (
     <motion.div 
         initial={{ opacity: 0 }}
@@ -26,24 +28,23 @@ const ProjectLinks = (props: Props) => {
           duration: 1.2,
         }}
         viewport={{ once: true }}
-        src={wrapGif.src}
+        src={projectDate.image}
         className="-mb-40 md:mb-0 flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
       <h3 className=" uppercase tracking-[20px] text-gray-300 text-md md:text-2xl my-3">
-        Machine Headz
+        {projectDate.projectName}
       </h3>
         {/* <p className="text-sm text-justify">
           Machine Headz
         </p> */}
         <div className='pt-5'>
-            <Link href={'https://discord.gg/ekTYkxn25R'}>
-                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Discord</button>
-            </Link>
-            <Link href={'https://machineheadz.io/'}>
-                <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>MachineHeadz.io</button>
-            </Link>
+          {projectDate.links.map((data: any) => (
+              <Link key={data.buttonTitle} href={data.url}>
+                <a className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>{data.buttonTitle}</a>
+              </Link>
+            ))}
         </div>
       </div>
     </motion.div>

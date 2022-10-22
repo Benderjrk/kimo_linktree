@@ -40,6 +40,10 @@
                 {
                     "buttonTitle": "Jpg.Store (Chaos)",
                     "url": "https://www.jpg.store/collection/MachineHeadzChaosEdition"
+                },
+                {
+                    "buttonTitle": "CNFT Jungle",
+                    "url": "https://www.cnftjungle.io/collections/8f63e08467bfbbc260a382a80f3297f9a569fca0293f296620d72d17"
                 }
             ]
         },
@@ -54,6 +58,34 @@
                 {
                     "buttonTitle": "Jpg.Store",
                     "url": "https://www.jpg.store/collection/skullsurfers"
+                }
+            ]
+        },
+        {
+            "projectName": "Hell Hounds",
+            "image" : "hell_hound.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/hellhounds"
+                }
+            ]
+        },
+        {
+            "projectName": "Survival Arena",
+            "image" : "survival_arena.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/survivalarena"
                 }
             ]
         }

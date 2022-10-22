@@ -3,9 +3,12 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
 import Link from 'next/link';
 
-type Props = {}
+type Props = {
+    about: any,
+    projects: any
+}
 
-export default function Header({}: Props) {
+export default function Header({ about, projects }: Props) {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div 
@@ -26,34 +29,26 @@ export default function Header({}: Props) {
             {/* Social Icons */}
             
             <div className='pt-5'>
-                <SocialIcon 
-                    url='https://discord.gg/EmUQKuT79g'
-                    network="discord"
-                    fgColor="gray"
-                    bgColor='#0A101E'
-                    className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
-                />
-                <SocialIcon 
-                    url="https://twitter.com/Nft4R"
-                    fgColor="gray"
-                    bgColor='transparent' 
-                    className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
-                />
-                <Link href={'#hero'}>
+                {about.links.map((link: any) => (
+                    <SocialIcon
+                        key={link.buttonTitle}
+                        url={link.url}
+                        fgColor="gray"
+                        bgColor='transparent' 
+                        className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
+                    />
+                ))}
+                <Link href={'#home'}>
                     <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Home</button>
                 </Link>
                 <Link href={'#about'}>
                     <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>About</button>
                 </Link>
-                <Link href={'#headz'}>
-                    <button className='heroButton hover:border-yellow-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Machine Headz</button>
-                </Link>
-                <Link href={'#hounds'}>
-                    <button className='heroButton hover:border-yellow-600 hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Hell Hounds</button>
-                </Link>
-                <Link href={'#survival'}>
-                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Survival Arena</button>
-                </Link>
+                {projects.map((project: any) => (
+                    <Link key={project.projectName} href={`#${project.projectName}`}>
+                        <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>{project.projectName}</button>
+                    </Link>
+                ))}
             </div>
         </motion.div>
 

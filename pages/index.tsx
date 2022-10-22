@@ -24,18 +24,18 @@ const Home: NextPage = () => {
       <Head>
         <title>{projectJson.title}</title>
       </Head>
-      <Header />
-      <section id='hero' className='snap-start'>
-        <Hero json={projectJson} />
+      <Header about={projectJson.about} projects={projectJson.projects} />
+      <section id='home' className='snap-start'>
+        <Hero />
       </section>
       <section id='about' className='snap-start'>
         <About about={projectJson.about} />
       </section>
-      {}
-{/*       
-      <section id='headz' className='snap-center'>
-        <ProjectLinks />
-      </section> */}
+      {projectJson.projects.map((data: any) => (
+          <section  id={data.projectName} key={data.projectName} className='snap-center'>
+            <ProjectLinks projectDate={data} />
+          </section>
+      ))}
 
     </motion.div>
   )
