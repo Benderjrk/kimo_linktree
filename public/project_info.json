@@ -1,0 +1,62 @@
+{
+    "title": "Kimosabe Art",
+    "background": "legendary.gif",
+    "about": {
+        "name": "Kimosabe",
+        "info": "I'M KIMOSABE, A NFT-ARTIST AND GRAPHIC DESIGNER🎨",
+        "image": "kimo.png",
+        "links": [
+            {
+                "buttonTitle": "Discord",
+                "url": "https://discord.com/invite/ekTYkxn25R"
+            },
+            {
+                "buttonTitle": "Twitter",
+                "url": "https://twitter.com/Nft4R"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "projectName": "Machine Headz",
+            "image": "machine_headz.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/RWaRt7xuc9"
+                },
+                {
+                    "buttonTitle": "MachineHeadz.io",
+                    "url": "https://machineheadz.io/"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/machineheadz"
+                },
+                {
+                    "buttonTitle": "Jpg.Store (Clan Leader)",
+                    "url": "https://www.jpg.store/collection/MachineHeadzClanLeaders"
+                },
+                {
+                    "buttonTitle": "Jpg.Store (Chaos)",
+                    "url": "https://www.jpg.store/collection/MachineHeadzChaosEdition"
+                }
+            ]
+        },
+        {
+            "projectName": "Skull Surfers",
+            "image": "skull_surfer.gif",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/skullsurfers"
+                }
+            ]
+        }
+    ]
+
+}

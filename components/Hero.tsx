@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import React from 'react'
+import Image from 'next/image';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
-import legend from '../public/legendary.gif'
-import Link from 'next/link';
+import legend from '../../public/legendary.gif'
 
 
 type Props = {}
