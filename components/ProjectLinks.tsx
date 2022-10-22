@@ -1,7 +1,6 @@
 import React from "react";
-import wrapGif from "../public/wrap.gif";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Button from "./Button";
 
 type Props = {
   projectDate: any
@@ -41,9 +40,7 @@ const ProjectLinks = ({ projectDate }: Props) => {
         </p> */}
         <div className='pt-5'>
           {projectDate.links.map((data: any) => (
-              <Link key={data.buttonTitle} href={data.url}>
-                <a className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>{data.buttonTitle}</a>
-              </Link>
+              <Button key={data.buttonTitle} href={data.url} words={data.buttonTitle}/>
             ))}
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
 import Link from 'next/link';
+import Button from './Button';
 
 type Props = {
     about: any,
@@ -38,16 +39,10 @@ export default function Header({ about, projects }: Props) {
                         className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80' 
                     />
                 ))}
-                <Link href={'#home'}>
-                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>Home</button>
-                </Link>
-                <Link href={'#about'}>
-                    <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>About</button>
-                </Link>
+                <Button href={`#home`} words={'Home'}/>
+                <Button href={`#about`} words={'About'}/>
                 {projects.map((project: any) => (
-                    <Link key={project.projectName} href={`#${project.projectName}`}>
-                        <button className='heroButton hover:border-yellow-600  hover:shadow-inner hover:shadow-4xl hover:shadow-zinc-800/80'>{project.projectName}</button>
-                    </Link>
+                    <Button key={project.projectName} href={`#${project.projectName}`} words={project.projectName}/>
                 ))}
             </div>
         </motion.div>
