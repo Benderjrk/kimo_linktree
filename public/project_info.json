@@ -26,6 +26,7 @@
         {
             "projectName": "Machine Headz",
             "image": "machine_headz.gif",
+            "imageAlt": "Machine Headz Image",
             "links": [
                 {
                     "buttonTitle": "Discord",
@@ -56,6 +57,7 @@
         {
             "projectName": "Skull Surfers",
             "image": "skull_surfer.gif",
+            "imageAlt": "Skull Surfer Image",
             "links": [
                 {
                     "buttonTitle": "Discord",
@@ -70,6 +72,7 @@
         {
             "projectName": "Hell Hounds",
             "image" : "hell_hound.gif",
+            "imageAlt": "Hell Hounds Image",
             "links": [
                 {
                     "buttonTitle": "Discord",
@@ -84,6 +87,7 @@
         {
             "projectName": "Survival Arena",
             "image" : "survival_arena.gif",
+            "imageAlt": "Survival Arena Image",
             "links": [
                 {
                     "buttonTitle": "Discord",
@@ -96,6 +100,89 @@
                 {
                     "buttonTitle": "SurvivalArena.io",
                     "url": "https://survivalarena.io/"
+                },
+                {
+                    "buttonTitle": "Info",
+                    "url": "https://info-182.gitbook.io/survival-arena/"
+                },
+                {
+                    "buttonTitle": "Mint Set 2",
+                    "url": "https://easycnft.art/en/flash/2443"
+                }
+            ]
+        },
+        {
+            "projectName": "Cyberpunk Season 2",
+            "image" : "cyberpunk_season_2.gif",
+            "imageAlt": "Cyberpunk Season 2 Image",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/cyberpunkseason2"
+                }
+            ]
+        },
+        {
+            "projectName": "Skull Lord",
+            "image" : "skull_lord.gif",
+            "imageAlt": "Skull Lord Image",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/skulllord"
+                }
+            ]
+        },
+        {
+            "projectName": "Jada Life",
+            "image" : "jada_life.gif",
+            "imageAlt": "Jada Life Image",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/jadalife"
+                }
+            ]
+        },
+        {
+            "projectName": "Symbiotes",
+            "image" : "symbiote.gif",
+            "imageAlt": "Symbiote Image",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/symbiotescollection"
+                }
+            ]
+        },
+        {
+            "projectName": "Cyberpunk Samurais",
+            "image" : "cyberpunk_samurais.gif",
+            "imageAlt": "Cyberpunk Samurais Image",
+            "links": [
+                {
+                    "buttonTitle": "Discord",
+                    "url": "https://discord.com/invite/zwwV7aDMPS"
+                },
+                {
+                    "buttonTitle": "Jpg.Store",
+                    "url": "https://www.jpg.store/collection/cyberpunksamurais"
                 }
             ]
         }

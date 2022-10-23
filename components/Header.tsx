@@ -28,7 +28,7 @@ export default function Header({ about, projects }: Props) {
             className='flex flex-row items-center'>
             {/* Social Icons */}
             
-            <div className='hidden sm:flex sm:flex-wrap justify-center'>
+            <div className='hidden md:flex md:flex-wrap justify-center'>
                 {about.links.map((link: any) => (
                     <SocialIcon
                         key={link.buttonTitle}

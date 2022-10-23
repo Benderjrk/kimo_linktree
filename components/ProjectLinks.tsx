@@ -28,7 +28,7 @@ const ProjectLinks = ({ projectData }: Props) => {
         }}
         viewport={{ once: true }}
         src={projectData.image}
-        alt={projectData.image}
+        alt={projectData.imageAlt}
         className="-mb-40 md:mb-0 flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
       />
 
@@ -36,10 +36,7 @@ const ProjectLinks = ({ projectData }: Props) => {
       <h3 className=" uppercase tracking-[20px] text-gray-300 text-md md:text-2xl my-3">
         {projectData.projectName}
       </h3>
-        {/* <p className="text-sm text-justify">
-          Machine Headz
-        </p> */}
-        <div className='flex flex-wrap justify-center'>
+        <div className='flex flex-wrap'>
           {projectData.links.map((data: any) => (
               <Button key={data.buttonTitle} href={data.url} words={data.buttonTitle}/>
             ))}
