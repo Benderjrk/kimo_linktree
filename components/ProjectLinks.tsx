@@ -29,14 +29,14 @@ const ProjectLinks = ({ projectData }: Props) => {
         viewport={{ once: true }}
         src={projectData.image}
         alt={projectData.imageAlt}
-        className="-mb-40 md:mb-0 flex-shrink-0 w-[150px] h-[150px] rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+        className="-mb-10 md:mb-0 flex-shrink-0 w-[200px] h-[200px] rounded-full object-cover md:rounded-2xl md:w-64 md:h-95 xl:w-[400px] xl:h-[300px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
-      <h3 className=" uppercase tracking-[20px] text-gray-300 text-md md:text-2xl my-3">
+      <h3 className=" uppercase tracking-[20px] text-gray-100 text-2xl md:text-2xl my-3">
         {projectData.projectName}
       </h3>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap justify-center'>
           {projectData.links.map((data: any) => (
               <Button key={data.buttonTitle} href={data.url} words={data.buttonTitle}/>
             ))}
